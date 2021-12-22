@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>array activitys</title>
+    
+    
+</head>
+<body>
+    <p>
+        how to declear array?
+        <h4 id="declartion_of_array"></h4>
+    </p>
+    <p>
+        how to fetch first elenent of array?
+        <h4 id="access_first_element"></h4>
+    </p>
+    <p>
+        how to fetch second elenent of array?
+        <h4 id="access_second_element"></h4>
+    </p>
+    <p>
+        how to find length of array?
+        <h4 id="length_of_array"></h4>
+    </p>
+    <p>
+        how to loop array?
+        <h4 id="loop_the_array"></h4>
+    </p>
+    <p>
+        how to add element at the end of array?
+        <h4 id="add_ele_at_the_end_of_array"></h4>
+    </p>
+    <p>
+        how to add more element at the end of array?
+        <h4 id="add_more_ele_at_the_end_of_array"></h4>
+    </p>
+    <p>
+        how to decliare alphabet array?
+        <h4 id="display_alphabet_array"></h4>
+    </p>
+    <p>
+        how to sort alphabet array?
+        <h4 id="display_sort_alphabet_array"></h4>
+    </p>
+    <p>
+        how to reverse alphabet array?
+        <h4 id="display_reverse_alphabet_array"></h4>
+    </p>
+    <p>
+        how to decliare number array?
+        <h4 id="display_number_array"></h4>
+    </p>
+    <p>
+        how to find max number in array?
+        <h4 id="display_max_number"></h4>
+    </p>
+    <p>
+        how to find min number in array?
+        <h4 id="display_min_number"></h4>
+    </p>
+    <script>
+var fruit=["apple","mango","orange"];
+ console.log(fruit);
+ document.getElementById("declartion_of_array").innerHTML=fruit;
+
+ var first_fruit=fruit[0];
+ document.getElementById("access_first_element").innerHTML=first_fruit;
+
+var second_fruit=fruit[1];
+document.getElementById("access_second_element").innerHTML=second_fruit;
+
+var langth_of_array=fruit.length;
+document.getElementById("length_of_array").innerHTML=langth_of_array;
+
+var array_value="";
+for(i=0;i<fruit.length;i++){
+    array_value=array_value+fruit[i]+"<br>";
+}
+document.getElementById("loop_the_array").innerHTML=array_value;
+
+fruit.push("lemon");
+document.getElementById("add_ele_at_the_end_of_array").innerHTML=fruit;
+
+fruit.push("cherry");
+document.getElementById("add_more_ele_at_the_end_of_array").innerHTML=fruit;
+
+var alphabet=["r","h","l","d","s","t"];
+document.getElementById("display_alphabet_array").innerHTML=alphabet;
+alphabet.sort();
+document.getElementById("display_sort_alphabet_array").innerHTML=alphabet;
+alphabet.reverse();
+document.getElementById("display_reverse_alphabet_array").innerHTML=alphabet;
+
+var number=["34","56","46","95","38"];
+document.getElementById("display_number_array").innerHTML=number;
+var max_number=Math.max.apply(Math,number);
+document.getElementById("display_max_number").innerHTML=max_number;
+var min_number=Math.min.apply(Math,number);
+document.getElementById("display_min_number").innerHTML=min_number;
+
+</script>
+
+</body>
+</html>
